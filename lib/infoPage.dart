@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "./testPage.dart";
+import "./availableParking.dart";
 
 class InfoPage extends StatefulWidget {
   InfoPage({Key key}) : super(key: key);
@@ -14,27 +14,73 @@ class _InfoPageState extends State<InfoPage> {
       appBar: AppBar(
         title: Text("Park Spot"),
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            Text("   HA    hA HA    "),
-            RaisedButton(
-              child: Text("CLICK ME!"),
-              onPressed: () {
-                print("WORKS");
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => TestPage()));
-              },
-            ),
-            RaisedButton(
-              child: Text("CLICK ME!"),
-              onPressed: () {
-                print("WORKS");
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => TestPage()));
-              },
-            )
-          ],
+      body: Center(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              Text("Welcome to Park Spot"),
+              RaisedButton(
+                child: Text("View Footage of Lot 50"),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AvailableParking()));
+                },
+              ),
+              Spacer(flex: 1),
+              RaisedButton(
+                child: Text("View Footage of Lot 26"),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AvailableParking()));
+                },
+              ),
+              Spacer(flex: 1),
+              RaisedButton(
+                child: Text("View Footage of Lot 55"),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AvailableParking()));
+                },
+              ),
+              Spacer(flex: 1),
+              RaisedButton(
+                child: Text("View Footage of Lot F10"),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AvailableParking()));
+                },
+              ),
+              Spacer(flex: 1),
+              RaisedButton(
+                child: Text("View Footage of Lot 36"),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AvailableParking()));
+                },
+              ),
+              Spacer(flex: 1),
+              RaisedButton(
+                child: Text("View Footage of Lot F7"),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AvailableParking()));
+                },
+              ),
+              Spacer(flex: 1),
+            ],
+          ),
         ),
       ),
     ));
