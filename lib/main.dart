@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import "./infoPage.dart";
+import "./loginPage.dart";
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
       ),
-      home: InfoPage(),
+      //  home: InfoPage(),
+      home: Login(),
     );
   }
 }
