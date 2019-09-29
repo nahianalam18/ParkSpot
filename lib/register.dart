@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import './successPage.dart';
+
+
 class Register extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
@@ -72,6 +75,10 @@ class Register extends StatelessWidget {
                                   if (form.validate()) {
                                     //form.save();
                                   }
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Success()));
                                 },
                                 child: Text('Register'),
                               )),
