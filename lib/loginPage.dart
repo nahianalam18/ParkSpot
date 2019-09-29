@@ -14,6 +14,7 @@ class Login extends StatelessWidget {
             child: Container(
                 child: Column(
           children: <Widget>[
+            Spacer(flex: 1),
             ButtonTheme(
                 minWidth: 200.0,
                 height: 70.0,
