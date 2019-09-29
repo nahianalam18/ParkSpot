@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'infoPage.dart';
+import './register.dart';
 
 class Login extends StatelessWidget {
   const Login({Key key}) : super(key: key);
@@ -7,9 +8,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Login to Park Spot"),
-        ),
+        appBar: AppBar(title: Text("Login to Park Spot")),
         body: Center(
             child: Container(
                 child: Column(
@@ -35,7 +34,7 @@ class Login extends StatelessWidget {
                   color: Colors.red,
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => InfoPage()));
+                        MaterialPageRoute(builder: (context) => Register()));
                   },
                 )),
             Spacer(flex: 1)
