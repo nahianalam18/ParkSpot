@@ -17,6 +17,7 @@ class _AvailableParkingState extends State<AvailableParking> {
       body: Center(
         child: Container(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset("./assets/dummyParking.jpg"),
             Text("Available Spots: "),

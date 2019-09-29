@@ -18,7 +18,11 @@ class _InfoPageState extends State<InfoPage> {
         child: Container(
           child: Column(
             children: <Widget>[
-              Text("Welcome to Park Spot"),
+              Text(
+                "Welcome to Park Spot",
+                style: TextStyle(fontSize: 35, color: Colors.red[300]),
+              ),
+              Spacer(flex: 1),
               RaisedButton(
                 child: Text("View Footage of Lot 50"),
                 onPressed: () {
